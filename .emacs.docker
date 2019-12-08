@@ -1,0 +1,11 @@
+; -*- mode: Lisp;-*-
+
+(setq initial-scratch-message (concat initial-scratch-message
+";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\
+;; This Emacs is Powered by my configurations\n\
+;; This is the full configuration using \`https://github.com/jhonny007/.emacs.d\`.\n\
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n"))
+
+
+(setq emacs-user-directory (getenv "EMACS_USER_DIRECTORY"))
+(load (concat emacs-user-directory "init.el"))
